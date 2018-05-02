@@ -21,6 +21,8 @@ namespace WebAPI.Filter
                 return;
             }
 
+
+
             var token = actionContext.Request.Headers.Authorization;
             string[] userToken = token.ToString().Split('|');
             //拿着用户id和token到数据库里去做验证
